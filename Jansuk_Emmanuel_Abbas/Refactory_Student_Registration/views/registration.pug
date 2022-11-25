@@ -11,10 +11,10 @@ block main
                         .row 
                             .col-12 
                                 label.form-label() surname 
-                                input.form-control(type='text' name='surname' required)
+                                input.form-control(type='text' name='surname' pattern="[A-Za-z]+" title='Only letters are require' required)
                             .col-12 
                                 label.form-label() Given Name 
-                                input.form-control(type='text' name='given_name' required)
+                                input.form-control(type='text' name='given_name' pattern="[A-Za-z]+" title='Only letters are require' required)
                             .col-12
                                 label.form-label() Title 
                                     select.form-select(name='title')
@@ -42,13 +42,13 @@ block main
                         input.form-control(type='date' name='date_of_birth' required)
                     .col-6 
                         label.form-label() Country
-                        input.form-control(type='text' name='country' required)
+                        input.form-control(type='text' name='country' pattern="[A-Za-z]+" title='Only letters are require' required)
                     .col-12 
                         label.form-label() Place of Residence
-                        input.form-control(type='text' name='residence' required)
+                        input.form-control(type='text' name='residence' pattern="[A-Za-z]+" title='Only letters are require' required)
                     .col-12 
                         label.form-label() Nationality
-                        input.form-control(type='text' name='nationality')
+                        input.form-control(type='text' name='nationality' pattern="[A-Za-z]+" title='Only letters are require' required)
                 button.btn.btn-primary.mt-4.me-2(type='submit') Register
 
 
