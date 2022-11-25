@@ -19,11 +19,6 @@ router.post('/register', async (req, res) => {
             }
             res.redirect('/register');
         })
-    } catch (error) => {
-      res.status(400).send('Unable to Register Student')
-      console.log(error)  
-    }
-)
-
+    })
 
 module.exports = router
