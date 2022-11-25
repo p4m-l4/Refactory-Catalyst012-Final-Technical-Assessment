@@ -1,0 +1,56 @@
+extends layout.pug 
+
+block main 
+    .register
+        .container
+            .form_header 
+                h2 Student Registration From
+            form(action='/register_students' method='post' enctype="multipart/form-data")
+                .row 
+                    .col-md-8
+                        .row 
+                            .col-12 
+                                label.form-label() surname 
+                                input.form-control(type='text' name='surname' pattern="[A-Za-z]+" title='Only letters are require' required)
+                            .col-12 
+                                label.form-label() Given Name 
+                                input.form-control(type='text' name='given_name' pattern="[A-Za-z]+" title='Only letters are require' required)
+                            .col-12
+                                label.form-label() Title 
+                                    select.form-select(name='title')
+                                        option(selected) Select a title 
+                                        option(value='mr') Mr.
+                                        option(value='ms') Ms.
+                    .col-md-3
+                        .row    
+                            .col-12 
+                                .image 
+                            .col-12 
+                                label.form-label(for='formFile') Upload Image
+                                input#formFile.form-control(type='file' name='image_upload' required)
+                .row 
+                    .col-12 
+                        label.form-label.d-block() Gender 
+                        .form-check.d-inline-block 
+                            input.form-check-input(type='radio' value='female' name='gender')
+                            label.form-check-label() Female
+                        .form-check.d-inline-block.ms-5 
+                            input.form-check-input(type='radio' value='male' name='gender')
+                            label.form-check-label() Male
+                    .col-6 
+                        label.form-label() Date of birth
+                        input.form-control(type='date' name='date_of_birth' required)
+                    .col-6 
+                        label.form-label() Country
+                        input.form-control(type='text' name='country' pattern="[A-Za-z]+" title='Only letters are require' required)
+                    .col-12 
+                        label.form-label() Place of Residence
+                        input.form-control(type='text' name='residence' pattern="[A-Za-z]+" title='Only letters are require' required)
+                    .col-12 
+                        label.form-label() Nationality
+                        input.form-control(type='text' name='nationality' pattern="[A-Za-z]+" title='Only letters are require' required)
+                button.btn.btn-primary.mt-4.me-2(type='submit') Register
+
+
+
+            
