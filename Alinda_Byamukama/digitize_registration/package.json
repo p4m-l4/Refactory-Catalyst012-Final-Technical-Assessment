@@ -1,0 +1,28 @@
+{
+  "name": "digitize_registration",
+  "version": "1.0.0",
+  "description": "CAT012 Final Technical Assessment",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alindaByamukama/Refactory-Catalyst012-Final-Technical-Assessment.git"
+  },
+  "keywords": [
+    "Refactory",
+    "Technical",
+    "Assessment",
+    "NodeJS",
+    "Pug",
+    "Express",
+    "MongoDB"
+  ],
+  "author": "Alinda Byamukama Cohort012",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alindaByamukama/Refactory-Catalyst012-Final-Technical-Assessment/issues"
+  },
+  "homepage": "https://github.com/alindaByamukama/Refactory-Catalyst012-Final-Technical-Assessment#readme"
+}
