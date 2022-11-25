@@ -21,6 +21,7 @@ router.get('/', (req, res) => {
 })
 
 
+
 router.post('/register_students', upload.single("image_upload"), async (req, res) => {
     const registerStudents = new regModel(req.body)
     registerStudents.image_upload = req.file.path
