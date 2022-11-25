@@ -1,5 +1,7 @@
 // Please Note am using pattern attributes to Validate the form
 
+// get the data
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
 	"use strict";
