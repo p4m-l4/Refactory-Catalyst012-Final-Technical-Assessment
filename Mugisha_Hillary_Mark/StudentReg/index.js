@@ -58,7 +58,7 @@ passport.serializeUser(Registration.serializeUser());
 passport.deserializeUser(Registration.deserializeUser())
 
 
-//ROUTES---------------------------------/
+//routes
 app.use('/', regRoute);
 
 
