@@ -20,7 +20,7 @@ main
     .row
         .col
         .col-6
-            form.mt-5.needs-validation(action="/" method="post" novalidate)
+            form.mt-5.needs-validation(action="/" method="post" enctype="multipart/form-data" novalidate)
                 .row
                     .mb-3.col-12.text-center Student Registration Form
                     .row
@@ -41,7 +41,7 @@ main
                                     | Invalid Field
                             .mb-3.col-12
                                 label.form-label(for='title') Title
-                                select.form-select(aria-label='Default select example' required)
+                                select.form-select(name="title" aria-label='Default select example' required)
                                     option(value="" selected) -- Select Title --
                                     option(value='Mr.') Mr.
                                     option(value='Mrs') Mrs.
@@ -55,6 +55,10 @@ main
                                     | Invalid field
                         .mb-3.col-4
                             img(src='/images/download.jpeg' alt='' height='250px' width='100%')
+                            input.form-control(type="file")
+                            .invalid-feedback All field are required
+                            .valid-feedback Looks good!
+
                     .mb-3.col-12
                         label.form-label(for='gender')  Gender
                         .row.ps-3
@@ -74,14 +78,14 @@ main
                                     | Gender Must be Specified.
                     .mb-3.col-6
                         label.form-label(for='dob') Date of Birth
-                        input#dob.form-control(type='text' name='dob' aria-describedby='' required)
+                        input#dob.form-control(type='date' name='dob' aria-describedby='' required)
                         .valid-feedback 
                             | Looks good!
                         .invalid-feedback 
                             | Select date of birth.
                     .mb-3.col-6
                         label.form-label(for='country') Country
-                        select.form-select(aria-label='Default select example' required)
+                        select.form-select(name="country" aria-label='Default select example' required)
                             option(value="" selected) -- Select Country --
                             option(value='uganda') Uganda
                             option(value='kenya') Kenya
