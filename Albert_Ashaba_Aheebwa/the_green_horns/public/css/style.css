@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+form {
+	padding: 20px;
+	border: 2px purple solid;
+	color: purple;
+	font-weight: bold;
+}
+
+.form-title {
+	background-color: purple;
+	color: white;
+	padding: 5px;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+input {
+	border: 2px purple solid;
+}
+
+.box {
+	width: 100%;
+	height: 250px;
+	background-color: rgba(128, 0, 128, 0.179);
+}
