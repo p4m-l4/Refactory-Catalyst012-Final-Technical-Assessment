@@ -5,16 +5,16 @@ block main
         .container
             .form_header 
                 h2 Student Registration From
-            form(action='/register_students' method='post')
+            form(action='/register_students' method='post' enctype="multipart/form-data")
                 .row 
                     .col-md-8
                         .row 
                             .col-12 
                                 label.form-label() surname 
-                                input.form-control(type='text' name='surname')
+                                input.form-control(type='text' name='surname' required)
                             .col-12 
                                 label.form-label() Given Name 
-                                input.form-control(type='text' name='given_name')
+                                input.form-control(type='text' name='given_name' required)
                             .col-12
                                 label.form-label() Title 
                                     select.form-select(name='title')
@@ -27,7 +27,7 @@ block main
                                 .image 
                             .col-12 
                                 label.form-label(for='formFile') Upload Image
-                                input#formFile.form-control(type='file' name='image_upload')
+                                input#formFile.form-control(type='file' name='image_upload' required)
                 .row 
                     .col-12 
                         label.form-label.d-block() Gender 
@@ -39,13 +39,13 @@ block main
                             label.form-check-label() Male
                     .col-6 
                         label.form-label() Date of birth
-                        input.form-control(type='date' name='date_of_birth')
+                        input.form-control(type='date' name='date_of_birth' required)
                     .col-6 
                         label.form-label() Country
-                        input.form-control(type='text' name='country')
+                        input.form-control(type='text' name='country' required)
                     .col-12 
                         label.form-label() Place of Residence
-                        input.form-control(type='text' name='residence')
+                        input.form-control(type='text' name='residence' required)
                     .col-12 
                         label.form-label() Nationality
                         input.form-control(type='text' name='nationality')
