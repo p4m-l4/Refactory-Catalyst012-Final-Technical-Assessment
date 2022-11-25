@@ -1,6 +1,0 @@
-Name pattern= "[a-zA-Z]{3,24}"
-Email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
-Phone pattern="7\\d\\d\\d\\d\\d\\d\\d\\d" 
-NIN pattern="[a-zA-Z0-9]{13}"
-Address  pattern="[a-zA-Z0-9_]{5,}"
-
