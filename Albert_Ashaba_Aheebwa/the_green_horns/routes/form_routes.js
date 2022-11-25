@@ -29,7 +29,7 @@ router.post("/", upload.single("avatar"), async (req, res) => {
 		student.avatar = req.file.path;
 		await student.save();
 		req.flash("info", "Student registered successfully");
-		res.redirect("/form");
+		res.redirect("/");
 	} catch (err) {
 		console.log(err);
 		res.status(404).send(err);
