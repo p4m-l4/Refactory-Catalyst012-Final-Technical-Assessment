@@ -1,0 +1,9 @@
+mixin toast(message, type)
+  -
+    const styles = {
+      "Success": {bg:"bg-success", text:"text-bg-success", title:"Success"},
+      "Error": {bg:"bg-danger", text:"text-bg-danger", title:"Error"},
+      "Info": {bg:"bg-info", text:"text-bg-info", title:"Info"} 
+    }
+    const style = styles[type]
+  h3.px-2.py-3.fw-light(class=`${style.bg} ${style.text}`)=message
