@@ -39,20 +39,22 @@ body
                         input.box.form-control(type='text' name="imageupload") 
                         button.upload-btn(type="text") upload
                         small#givenameError
-                .row 
-                    .col
-                        label(for='gender') Gender:
-                        .radio#gender
-                            input.radio#gender1(type='radio' name='gender'  value= 'Female')
-                            span Female
-                            input.radio#gender2(type='radio' name='gender' value= 'Male')
-                            span Male
                 .row
-                    .col
-                        label(for='') Date of Birth
-                        small.asterisk *
-                        input#dateofbirth.form-control(type='Date' name="dateofbirth")
-                        small#dateofbirthError
+                    .input-style
+                        .col
+                            label(for='gender') Gender:
+                            .radio#gender
+                                input.radio#gender1(type='radio' name='gender'  value= 'Female')
+                                span Female
+                                input.radio#gender2(type='radio' name='gender' value= 'Male')
+                                span Male
+                .row
+                    .input-style
+                        .col
+                            label(for='') Date of Birth
+                            small.asterisk *
+                            input#dateofbirth.form-control(type='Date' name="dateofbirth")
+                            small#dateofbirthError
                     .col
                         label(for='') Country
                         small.asterisk *

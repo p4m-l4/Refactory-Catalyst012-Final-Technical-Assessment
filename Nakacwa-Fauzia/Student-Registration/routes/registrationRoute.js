@@ -9,9 +9,14 @@ router.get("/", (req, res) =>{
 })
 
 router.post('/', async(req, res) => {
-    console.log(req.body)
-    const student = new Registration(req.body);
-    await student.save();
+    console.log(req.body);
+    try {
+		const student = new Registration(req.body);
+		await student.save();
+    } catch (error) {
+        res.status(400).send("Can't Save This Application");
+    }
+    
 
 })
 module.exports = router

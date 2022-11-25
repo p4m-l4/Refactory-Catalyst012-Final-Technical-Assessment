@@ -10,16 +10,22 @@ const applicationForm = (event) =>{
 
     let error = 0;
 
+    let alphaRegex = /^[A-Za-z]+$/;
     let surnameValue = surName.value.trim();
     if (surnameValue == "") {
         surName.style.border = "1px solid red";
         surNameError.textContent = "invalid Feild";
         surNameError.style = "color:red; font-size:11px;";
         error++
-	}else{
-        surName.style.border = "1px solid green";
-        surNameError.textContent = "";
-    }
+	}else if (!surnameValue.match(alphaRegex)) {
+        surName.style.border = "1px solid red";
+		surNameError.textContent = "Surname Should not be only letters";
+		surNameError.style = "color:red; font-size:11px;";
+		error++;
+	} else {
+		surName.style.border = "1px solid green";
+		surNameError.textContent = "";
+	}
     let giveNameValue = giveName.value.trim();
     if (giveNameValue == "") {
 		giveName.style.border = "1px solid red";
