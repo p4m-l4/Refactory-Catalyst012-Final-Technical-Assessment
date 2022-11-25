@@ -41,9 +41,9 @@ html(lang="en")
                                 option(value='eng') Eng.
                             .invalid-feedback
                                 | Please select one option.
-                        .col-5 
-                            .input-group.pic-select
-                                button#inputGroupFileAddon04.btn.btn-outline-secondary(type='button') Button
+                        //- .col-5 
+                            //- .input-group.pic-select
+                            //-     button#inputGroupFileAddon04.btn.btn-outline-secondary(type='button') Button
                         
                     .row 
                         .col-12
@@ -62,8 +62,8 @@ html(lang="en")
                         .col-6
                             - const today = new Date()
                             - const year = today.getFullYear()
-                            - const maximum = year - 18
-                            - const minimum = year - 65
+                            - const maximum = year - 16
+                            - const minimum = year - 150
                             label.form-label(for='validationCustom05') Date of birth
                             input#validationCustom05.form-control(type='date' required='' name='dob' pattern='', max=maximum+'-12-31', min=minimum+'-12-31')
                             .invalid-feedback
