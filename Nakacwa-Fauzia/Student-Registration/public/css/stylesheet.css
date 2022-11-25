@@ -1,0 +1,45 @@
+.form-style {
+	width: 50%;
+	box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.3);
+}
+.header {
+	margin: 10px;
+}
+.header-container {
+	background-color: #542a52;
+	color: white;
+}
+.container-section {
+	float: right;
+}
+.submit-btn {
+	text-align: right;
+}
+.submit-btn button {
+	width: 45%;
+	padding: 6px;
+	border-radius: 5px;
+	background-color: #542a52;
+	border: none;
+	color: white;
+}
+.box {
+	width: 100%;
+	height: 80%;
+	background-color: blanchedalmond;
+}
+.radio {
+	width: 100%;
+	display: flex;
+	/* border: 1px solid black; */
+}
+.upload-btn {
+	width: 100%;
+	border: 1px solid black;
+	color: #542a52;
+	padding: 4px;
+	margin-top: 5px;
+}
+.input-style {
+	margin-bottom: 10px;
+}
