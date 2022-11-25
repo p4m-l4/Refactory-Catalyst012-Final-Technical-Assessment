@@ -1,0 +1,51 @@
+extends layout.pug
+
+block main
+    .container    
+        form#signup.justify-content-center(action='/register' method='post' style='border: 2px solid grey;')
+            h5(style='background: purple') Student Registration Form
+            .row
+                .col-md-8.mb-3
+                    label.form-label(for='exampleInputEmail1') SurName
+                    input#surname.form-control(type='text' aria-describedby='emailHelp' name='surname')
+                    small#surnameerror
+            .row
+                .col-md-8.mb-3
+                    label.form-label(for='exampleInputPassword1') Given Name
+                    input#gname.form-control(type='text' name='gname')
+                    small#gnameerror
+            .row
+                .col-md-8.mb-3
+                    label.form-label(for='exampleInputPassword1') Title
+                    input#title.form-control(type='text' name='title')
+                    small#titleerror
+            .row
+                .col-md-12.mb-3.form-check
+                    h6 Gender
+                    input#gender.form-check-input(type='checkbox' name='gender')
+                    label.form-check-label.mx-5(for='female') Female
+                    input#gender.form-check-input(type='checkbox' name='Male')
+                    label.form-check-label(for='male') Male
+                    small#gendererror
+            .row
+                .col-md-6.mb-3
+                    label.form-label(for='exampleInputPassword1') Date of Birth
+                    input#dob.form-control(type='date' name='dob')
+                    small#doberror
+                .col-md-6.mb-3
+                    label.form-label(for='exampleInputPassword1') Country
+                    input#country.form-control(type='text' name='country')
+                    small#countryerror
+            .row
+                .col-md-12.mb-3
+                    label.form-label(for='exampleInputPassword1') Place of residence
+                    input#residence.form-control(type='text' name='residence')
+                    small#residenceerror
+            .row
+                .col-md-8.mb-3
+                    label.form-label(for='exampleInputPassword1') Nationality
+                    input#nationality.form-control(type='text' name='nationality')
+                    small#nationalityerror
+            button.btn.btn-primary.ms-2(type='submit') Submit
+
+            

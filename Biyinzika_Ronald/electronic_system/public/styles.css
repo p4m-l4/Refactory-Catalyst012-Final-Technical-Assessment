@@ -1,0 +1,9 @@
+.allform{
+    border: 1px solid #000;
+    width: 50%;
+    margin-left: 20rem;
+}
+.allform h4{
+    text-align: center;
+    padding-bottom: 20px;
+}
