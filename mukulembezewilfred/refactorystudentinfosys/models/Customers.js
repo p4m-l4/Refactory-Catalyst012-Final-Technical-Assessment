@@ -32,7 +32,7 @@ const userSchema = new mongoose.Schema({
 })
 
 // userSchema.plugin(passportLocalMongoose, {
-//   usernameField: 'nationality'
+//   usernameField: 'email'
 // })
 
 module.exports = mongoose.model('ClientRegister', userSchema);

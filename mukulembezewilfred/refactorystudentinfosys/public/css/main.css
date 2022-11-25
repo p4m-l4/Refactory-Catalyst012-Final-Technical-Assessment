@@ -48,7 +48,7 @@ body {
 .one-centered-div {
   width: 50%;
   margin: auto;
-  padding-left: 40px;
+  /* padding-left: 40px; */
   background-color: rgb(203, 219, 243);
   color: white;
   display:flex;
@@ -107,6 +107,7 @@ body {
   box-shadow: 10px 20px 20px 10px slategrey;
   border-radius: 0 20px 0 20px;
   padding-left: 3rem;
-  width: 750px;
+  padding-right: 3rem;
+  width: 450px;
   /* background-image: url("/images/dbg1.webp"); */
 }
