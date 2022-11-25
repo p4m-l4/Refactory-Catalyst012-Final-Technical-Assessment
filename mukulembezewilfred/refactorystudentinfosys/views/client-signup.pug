@@ -1,0 +1,95 @@
+extends layout
+block content
+    form.needs-validation(action='/signupclient' name='clientsignup' enctype="multipart/form-data" method='POST' novalidate)
+      .container
+        .row.regfrmborderao
+          .col-md-12
+            h3 Welcome! Create Student Account
+            hr
+          .col-md-12
+              .frmelement
+                label(for='avatar') Upload Photo:
+                br
+                input#avatar.form-control(type='file', name='avatar' required)
+                br
+              .frmelement
+                label(for='fname') Sur name 
+                br
+                input#fname.form-control(type='text', name='firstname' required)
+                br
+                .invalid-feedback 
+                  | Invalid Field
+              .frmelement
+                label(fo='lname') Given name
+                br
+                input#lname.form-control(type='text', name='lastname' required)
+                br
+                .invalid-feedback 
+                  | Invalid Field
+              .frmelement
+                label(for='title') Title 
+                br
+                select#title.form-control.select-drpdwn(name='title')
+                  option(value='') ▾
+                  option(value='Mr') Mr.
+                  option(value='Mrs') Mrs
+                  option(value='Miss') Miss
+                  option(value='Dr') Dr.
+                  option(value='Prof') Prof.
+                  option(value='Eng') Eng.
+                br
+                .invalid-feedback 
+                  | Invalid Field
+              .frmelement
+                label(for='gender') Gender
+                br
+                input#gender(type='radio', name='gender', value='male' checked)
+                | &nbsp;
+                label(for='gender-male') Male  
+                | &nbsp; &nbsp; &nbsp; &nbsp;
+                input#gender(type='radio', name='gender', value='female')
+                | &nbsp;
+                label(for='gender-female') Female
+                .invalid-feedback 
+                  | Invalid Field
+              .frmelement
+                label(for='dobirth') Date of Birth
+                br
+                input#dobirth.form-control(type='date', name='dob' required)
+                .invalid-feedback 
+                  | Select Date of Birth
+              .frmelement
+                label(for='country') Country
+                br
+                select#country.form-control.select-drpdwn(name='country' required)
+                  option(value='') ▾
+                  option(value='uganda') Uganda
+                  option(value='kenya') Kenya
+                  option(value='tanzania') Tanzania
+                  option(value='rwanda') Rwanda                
+                  option(value='burundi') Burundi
+                br
+                .invalid-feedback 
+                  | You must select your country of residence
+              .frmelement
+                label(for='residence') Place of residence
+                input#residence.form-control(type='text', name='residence' required)
+                br
+                .invalid-feedback 
+                  | Invalid Field
+              .frmelement
+                label(for='nationality') Nationality 
+                input#nationality.form-control(type='text', name='nationality' required)
+                br
+                .invalid-feedback 
+                  | Invalid Field
+          .col-md-12
+            hr
+            input#this-btn(type='submit', value='Sign up      📝')
+            br
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js', integrity='sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa', crossorigin='anonymous')
+    //- script(src='/js/date.js')
+    //- script(src='/js/validateform.js')
+    script(src='/js/validate.js')
+    script(src='/js/success.js')
+
